@@ -17,3 +17,8 @@ autocmd FileType make set noexpandtab " Use spaces instead of tabs when editing 
 " Save in ~/.vim/undo folder
 set undofile
 set undodir=~/.vim/undo
+
+
+" Note that +clipboard support must be enabled to copy/paste to clipboard
+" We can check by using vim --version | grep clipboard in terminal
+" We can copy the entire content in a vim by using :%y+

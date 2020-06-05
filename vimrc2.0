@@ -1,0 +1,19 @@
+syntax enable     " Enable syntax coloring
+set number        " Create numbers on left side
+set ruler         " Get ruler
+set sw=2          " 2 shift width
+set laststatus=2  " Get file name
+set tabstop=2     " 2 spaces with tab hit
+set expandtab     " Emit spaces not tabs
+
+" Create a template based on file extension
+autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
+autocmd BufNewFile *.cc 0r ~/.vim/templates/skeleton.cpp
+autocmd BufNewFile *.html 0r ~/.vim/templates/skeleton.html
+
+autocmd FileType make set noexpandtab " Use spaces instead of tabs when editing makefiles
+
+" Persistent Undo
+" Save in ~/.vim/undo folder
+set undofile
+set undodir=~/.vim/undo

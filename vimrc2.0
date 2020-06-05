@@ -21,4 +21,5 @@ set undodir=~/.vim/undo
 
 " Note that +clipboard support must be enabled to copy/paste to clipboard
 " We can check by using vim --version | grep clipboard in terminal
+" brew install vim to get support and restart terminal
 " We can copy the entire content in a vim by using :%y+

@@ -5,7 +5,7 @@ set sw=2          " 2 shift width
 set laststatus=2  " Get file name
 set tabstop=2     " 2 spaces with tab hit
 set expandtab     " Emit spaces not tabs
-
+set backspace=indent,eol,start " Enable backspacing
 " Create a template based on file extension
 autocmd BufNewFile *.cpp 0r ~/.vim/templates/skeleton.cpp
 autocmd BufNewFile *.cc 0r ~/.vim/templates/skeleton.cpp
